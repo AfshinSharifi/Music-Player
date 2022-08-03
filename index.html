@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="Styles/RB Afshin.css">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+    <div class="music-player flex">
+        <div class="playlist flex">
+            <header class="music-player-header flex">
+                <span><i class="fa-solid fa-headphones"></i></span>
+                <h2>Music <span>Player</span></h2>
+                <span class="choose">
+                    <input type="file" name="mFile" id="mFile"><label for="mFile"><i class="fa-solid fa-bars-staggered"></i></label>
+                </span>
+            </header>
+            <ul class="flex">
+                <li class="flex">
+                    <div class="poster circle">
+                        <img src="Images/Billie Eilish-Happier Than Ever.jpg" alt="">
+                    </div>
+                    <div class="music-content">
+                        <h3>Billie Eilish</h3>
+                        <p>Happier Than Ever</p>
+                    </div>
+                    <div class="mode flex">
+
+                        <span class="trash"><i class="fa-solid fa-trash"></i></span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <div class="poster circle">
+                        <img src="Images/Selena Gomez-Revival.jpg" alt="">
+                    </div>
+                    <div class="music-content">
+                        <h3>Selena Gomez</h3>
+                        <p>Revival</p>
+                    </div>
+                    <div class="mode flex">
+
+                        <span class="trash"><i class="fa-solid fa-trash"></i></span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <div class="poster circle">
+                        <img src="Images/Taylor Swift-Only The Young.jpg" alt="">
+                    </div>
+                    <div class="music-content">
+                        <h3>Taylor Swift</h3>
+                        <p>Only The Young</p>
+                    </div>
+                    <div class="mode flex">
+
+                        <span class="trash"><i class="fa-solid fa-trash"></i></span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <div class="poster circle">
+                        <img src="Images/Selena Gomez-Come & Get It.jpg" alt="">
+                    </div>
+                    <div class="music-content">
+                        <h3>Selena Gomez</h3>
+                        <p>Come & Get It</p>
+                    </div>
+                    <div class="mode flex">
+
+                        <span class="trash"><i class="fa-solid fa-trash"></i></span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <div class="poster circle">
+                        <img src="Images/John Legend-Green Light.jpg" alt="">
+                    </div>
+                    <div class="music-content">
+                        <h3>John Legend</h3>
+                        <p>Green Light</p>
+                    </div>
+                    <div class="mode flex">
+
+                        <span class="trash"><i class="fa-solid fa-trash"></i></span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <div class="poster circle">
+                        <img src="Images/Billie Eilish-Bellyache.jpg" alt="">
+                    </div>
+                    <div class="music-content">
+                        <h3>Billie Eilish</h3>
+                        <p>Bellyache</p>
+                    </div>
+                    <div class="mode flex">
+
+                        <span class="trash"><i class="fa-solid fa-trash"></i></span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <div class="poster circle">
+                        <img src="Images/Justin Timberlake-Mirrors.jpg" alt="">
+                    </div>
+                    <div class="music-content">
+                        <h3>Justin Timberlake</h3>
+                        <p>Mirrors</p>
+                    </div>
+                    <div class="mode flex">
+
+                        <span class="trash"><i class="fa-solid fa-trash"></i></span>
+                    </div>
+                </li>
+            </ul>
+            <span class="back"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+        <header class="music-player-header flex">
+            <span><i class="fa-solid fa-headphones"></i></span>
+            <h2>Music <span>Player</span></h2>
+        </header>
+        <main class="music-player-main flex">
+            <section class="music-player-main--poster circle">
+                <span class="time"></span>
+                <div class="mainPoster">
+                    <img src="Images/music-player.jpg" alt="">
+                </div>
+                <svg id="circle">
+                    <circle class="progress" cy="200" cx="200" r="140" width="18rem" height="18rem"></circle>
+                </svg>
+            </section>
+            <section class="music-player-main--title">
+                <div class="flex">
+                    <h3>Artist Name</h3>
+                    <p>Music Name</p>
+                </div>
+            </section>
+            <section class="music-player-main--icon flex">
+                <span class="item1">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+                <span class="item2">
+                    <i class="fa-solid fa-volume-low"></i>
+                </span>
+                <span class="item3">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </section>
+            <section class="progressbar">
+                <div class="prog">
+
+                </div>
+            </section>
+            <section class="music-player-main--icon__controler flex">
+                <audio src=""></audio>
+                <span class="icon1">
+                    <i class="fa-solid fa-backward"></i>
+                </span>
+                <span class="play">
+                    <i class="fa-solid fa-play"></i>
+                </span>
+                <span class="icon3">
+                    <i class="fa-solid fa-forward"></i>
+                </span>
+            </section>
+        </main>
+        <footer class="music-player-footer flex">
+            <section class="music-player-footer--list flex">
+                <ul class="flex">
+                    <li class="items1 circle flex">
+                        <img src="Images/Billie Eilish-Happier Than Ever.jpg" alt="">
+                    </li>
+                    <li class="items2 circle">
+                        <img src="Images/Selena Gomez-Revival.jpg" alt="">
+                    </li>
+                    <li class="items3 circle">
+                        <img src="Images/Taylor Swift-Only The Young.jpg" alt="">
+                    </li>
+                    <li class="items4 circle">
+                        <img src="Images/Selena Gomez-Come & Get It.jpg" alt="">
+                    </li>
+                    <li class="items5 circle">
+                        <img src="Images/John Legend-Green Light.jpg" alt="">
+                    </li>
+                    <li class="items6 circle">
+                        <img src="Images/Billie Eilish-Bellyache.jpg" alt="">
+                    </li>
+                    <li class="items7 circle">
+                        <img src="Images/Justin Timberlake-Mirrors.jpg" alt="">
+                    </li>
+                </ul>
+                <p>Powered By Afshin</p>
+            </section>
+        </footer>
+    </div>
+    <script src="Js/all.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+
+</html>

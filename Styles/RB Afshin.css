@@ -1,0 +1,89 @@
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    text-size-adjust: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: inherit;
+}
+
+:focus {
+    outline: none;
+    border: none;
+}
+
+body {
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+    display: block;
+}
+
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+    appearance: button;
+}
